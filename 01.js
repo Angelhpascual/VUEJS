@@ -28,7 +28,11 @@ const app = new Vue({
     },
     computed: {
         sumarFruta () {
-
+            this.total = 0
+            for(fruta of this.frutas){
+                this.total = this.total + fruta.cantidad
+            }
+            return this.total
         }
     }
 })

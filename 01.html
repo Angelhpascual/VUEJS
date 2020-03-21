@@ -29,7 +29,8 @@
                 <span v-if="fruta.cantidad === 0">-Sin Stock</span><!--CONDICIONAL IF-->
             </li>            
         </ul>
-        <h4>Suma Total</h4>
+        <h4>TOTAL: {{sumarFruta}}</h4>
+        <span v-if="sumarFruta === 0">RUINA TOTAR</span>
     </div>
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
